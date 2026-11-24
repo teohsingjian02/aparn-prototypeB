@@ -10,13 +10,14 @@
 <link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
 <link rel="preload" href="../../assets/fonts/archivo-normal-latin-3.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../../assets/b.css">
-<script>document.documentElement.classList.add("js")</script>
+<script>(function () { var r = document.documentElement, m = null; r.classList.add("js"); try { m = localStorage.getItem("aparn-motion"); } catch (e) {} var q = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches; if (m === "on" || (m !== "off" && !q)) r.classList.add("anim"); if (m === "off") r.classList.add("motion-off"); })();</script>
 <script defer src="../../assets/js/aparn.js"></script>
+<script defer src="../../assets/js/motion.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="proto">Prototype for discussion: a redesign proposal, not the official APARN website / <strong>Concept B: Living Network</strong> / <a href="../../compare/">Compare all three concepts</a></div>
-<header class="bar">
+<svg class="defs" width="0" height="0" aria-hidden="true" focusable="false"><defs><linearGradient id="b-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1300" y2="0"><stop offset="0" stop-color="#16E0A6"/><stop offset=".5" stop-color="#FFC23D"/><stop offset="1" stop-color="#FF4D3D"/></linearGradient></defs></svg>
+<header class="bar" data-top>
   <a class="bar-mark" href="../../"><span class="bar-aparn">APARN</span><span class="bar-full">Asia Pacific Artistic Research Network</span></a>
   <nav class="bar-quick" aria-label="Quick links">
     <a href="../../network/">Explore</a>
@@ -25,6 +26,7 @@
   </nav>
   <a class="btn btn--join bar-join" href="https://groups.google.com/g/ap-arn" rel="noopener" target="_blank" data-join>Join APARN<span class="vh"> (opens Google Groups in a new tab)</span></a>
   <button class="bar-index" type="button" data-nav-toggle aria-expanded="false" aria-controls="index-menu"><span class="bar-index-l">Index</span><span class="bar-index-i" aria-hidden="true"></span></button>
+  <div class="progress" aria-hidden="true"><span data-progress></span></div>
 </header>
 <div class="index-menu" id="index-menu" data-nav-overlay>
   <div class="index-inner">
@@ -46,20 +48,20 @@
 </div>
   <div class="ev-head-body">
     <p class="mono"><a href="../../archive/">Archive</a> / APARN Conference</p>
-    <h1 class="head-h">The Matter of Art</h1>
+    <h1 class="head-h"><span class="w"><span class="wi" style="--d:0">The</span></span> <span class="w"><span class="wi" style="--d:1">Matter</span></span> <span class="w"><span class="wi" style="--d:2">of</span></span> <span class="w"><span class="wi" style="--d:3">Art</span></span></h1>
     <p class="mono"><span class="status status--held">Held</span> 7 July 2023 / Yogyakarta, Indonesia</p>
     <p class="head-lede">Art results from matter, and results in matter. Artists shared the materials they work with, why that matters to them, and how close attention to material can open our senses to a changing planet.</p>
   </div>
 </header>
 <section class="sec-b facts-b">
-  <dl class="factsb"><div><dt class="mono">Label</dt><dd>APARN2023</dd></div><div><dt class="mono">Host</dt><dd>Institut Seni Indonesia Yogyakarta (ISI Yogyakarta)</dd></div><div><dt class="mono">Format</dt><dd>In person, with 20-minute presentations; creative formats welcome</dd></div><div><dt class="mono">Practice</dt><dd>Materials and making</dd></div></dl>
-  <div><h2 class="disp disp--s">Highlights</h2><ul class="bullets-b"><li>Hosted by ISI Yogyakarta, where the network began</li><li>Papers published in APARN’s JAR channel: Grounded Methodology Crafting; Encounter ‘Tanah’; No Waste</li></ul></div>
+  <dl class="factsb" data-rise><div><dt class="mono">Label</dt><dd>APARN2023</dd></div><div><dt class="mono">Host</dt><dd>Institut Seni Indonesia Yogyakarta (ISI Yogyakarta)</dd></div><div><dt class="mono">Format</dt><dd>In person, with 20-minute presentations; creative formats welcome</dd></div><div><dt class="mono">Practice</dt><dd>Materials and making</dd></div></dl>
+  <div><h2 class="disp disp--s" data-rise>Highlights</h2><ul class="bullets-b" data-rise><li>Hosted by ISI Yogyakarta, where the network began</li><li>Papers published in APARN’s JAR channel: Grounded Methodology Crafting; Encounter ‘Tanah’; No Waste</li></ul></div>
 </section>
-<section class="sec-b"><h2 class="disp disp--s">Event organisers</h2><ul class="orgs-b"><li><strong>Kurniawan Adi Saputro</strong><span class="mono">Convenor</span></li><li><strong>Danny Butt</strong><span class="mono">Convenor</span></li><li><strong>Gunalan Nadarajan</strong><span class="mono">Convenor</span></li></ul><p class="small">Listed for this edition. The network’s convenors are on the <a href="../../about/">About</a> page.</p></section>
+<section class="sec-b"><h2 class="disp disp--s" data-rise>Event organisers</h2><ul class="orgs-b"><li><strong>Kurniawan Adi Saputro</strong><span class="mono">Convenor</span></li><li><strong>Danny Butt</strong><span class="mono">Convenor</span></li><li><strong>Gunalan Nadarajan</strong><span class="mono">Convenor</span></li></ul><p class="small">Listed for this edition. The network’s convenors are on the <a href="../../about/">About</a> page.</p></section>
 
 
 <section class="sec-b"><details class="call-b"><summary>Read the original call (archived, now closed)</summary><blockquote><p>Art results from and results in matter. As art comprehends and works its material, it can transform solid marble into soft and transparent silk, or a disturbance in the air into melodic streams of experience. … APARN2023 invites artists and artistic researchers to share the matter of their practice and why it matters to them and others.</p></blockquote></details></section>
-<section class="sec-b"><h2 class="disp disp--s">Find the work</h2><ul class="links-b"><li><a class="" href="https://aparn.net/wp-content/uploads/2023/06/ProgrammeAPARN2023.pdf" rel="noopener" target="_blank">Programme booklet (PDF, aparn.net)<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li><li><a class="" href="https://aparn.net/aparn2023/" rel="noopener" target="_blank">Original page on aparn.net<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li></ul></section>
+<section class="sec-b"><h2 class="disp disp--s" data-rise>Find the work</h2><ul class="links-b"><li><a class="" href="https://aparn.net/wp-content/uploads/2023/06/ProgrammeAPARN2023.pdf" rel="noopener" target="_blank">Programme booklet (PDF, aparn.net)<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li><li><a class="" href="https://aparn.net/aparn2023/" rel="noopener" target="_blank">Original page on aparn.net<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li></ul></section>
 <section class="sec-b"><p class="source">Sources: <a href="https://aparn.net/aparn2023/" rel="noopener" target="_blank">#APARN2023 “The Matter of Art”</a>; <a href="https://aparn.net/wp-content/uploads/2023/06/ProgrammeAPARN2023.pdf" rel="noopener" target="_blank">APARN2023 programme booklet (PDF)</a>; <a href="https://www.jar-online.net/en/channels/asia-pacific-artistic-research-network" rel="noopener" target="_blank">Asia Pacific Artistic Research Network channel (JAR)</a></p></section>
 <nav class="pager-b" aria-label="More gatherings">
   <a href="../../archive/aparn2022/"><span class="mono">Earlier</span>#APARN2022</a>
@@ -81,8 +83,9 @@
       <li><a class="" href="https://sar2027.eu/sk" rel="noopener" target="_blank">SAR 2027<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li>
       <li><a class="" href="https://aparn.net" rel="noopener" target="_blank">Current aparn.net<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li></ul></div>
     <div><h2 class="foot-h mono">This prototype</h2><p class="small">A redesign proposal for discussion. Content checked 24 November 2026.</p><ul class="foot-list">
-      <li><a href="../../sources/">Sources, credits and open questions</a></li><li><a href="https://teohsingjian02.github.io/aparn-prototypeA/">See Concept A: Editorial Gallery</a></li><li><a href="https://teohsingjian02.github.io/aparn-prototypeC/">See Concept C: Clear Signal</a></li></ul></div>
+      <li><a href="../../compare/">Compare all three concepts</a></li><li><a href="../../sources/">Sources, credits and open questions</a></li><li><a href="https://teohsingjian02.github.io/aparn-prototypeA/">See Concept A: Editorial Gallery</a></li><li><a href="https://teohsingjian02.github.io/aparn-prototypeC/">See Concept C: Clear Signal</a></li></ul><button type="button" class="motion-sw" data-motion-toggle aria-pressed="false" hidden><span>Animations</span><span class="motion-sw-k" aria-hidden="true"></span></button></div>
   </div>
 </footer>
+<a class="totop" href="#main" data-totop><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M10 16V4M5 9l5-5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="vh">Back to top</span></a>
 </body>
 </html>

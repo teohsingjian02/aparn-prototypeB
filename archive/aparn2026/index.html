@@ -10,13 +10,14 @@
 <link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
 <link rel="preload" href="../../assets/fonts/archivo-normal-latin-3.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../../assets/b.css">
-<script>document.documentElement.classList.add("js")</script>
+<script>(function () { var r = document.documentElement, m = null; r.classList.add("js"); try { m = localStorage.getItem("aparn-motion"); } catch (e) {} var q = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches; if (m === "on" || (m !== "off" && !q)) r.classList.add("anim"); if (m === "off") r.classList.add("motion-off"); })();</script>
 <script defer src="../../assets/js/aparn.js"></script>
+<script defer src="../../assets/js/motion.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="proto">Prototype for discussion: a redesign proposal, not the official APARN website / <strong>Concept B: Living Network</strong> / <a href="../../compare/">Compare all three concepts</a></div>
-<header class="bar">
+<svg class="defs" width="0" height="0" aria-hidden="true" focusable="false"><defs><linearGradient id="b-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1300" y2="0"><stop offset="0" stop-color="#16E0A6"/><stop offset=".5" stop-color="#FFC23D"/><stop offset="1" stop-color="#FF4D3D"/></linearGradient></defs></svg>
+<header class="bar" data-top>
   <a class="bar-mark" href="../../"><span class="bar-aparn">APARN</span><span class="bar-full">Asia Pacific Artistic Research Network</span></a>
   <nav class="bar-quick" aria-label="Quick links">
     <a href="../../network/">Explore</a>
@@ -25,6 +26,7 @@
   </nav>
   <a class="btn btn--join bar-join" href="https://groups.google.com/g/ap-arn" rel="noopener" target="_blank" data-join>Join APARN<span class="vh"> (opens Google Groups in a new tab)</span></a>
   <button class="bar-index" type="button" data-nav-toggle aria-expanded="false" aria-controls="index-menu"><span class="bar-index-l">Index</span><span class="bar-index-i" aria-hidden="true"></span></button>
+  <div class="progress" aria-hidden="true"><span data-progress></span></div>
 </header>
 <div class="index-menu" id="index-menu" data-nav-overlay>
   <div class="index-inner">
@@ -46,20 +48,20 @@
 </div>
   <div class="ev-head-body">
     <p class="mono"><a href="../../archive/">Archive</a> / APARN Conference</p>
-    <h1 class="head-h">Who Speaks? Authorship, Authority, and Authenticity</h1>
+    <h1 class="head-h"><span class="w"><span class="wi" style="--d:0">Who</span></span> <span class="w"><span class="wi" style="--d:1">Speaks?</span></span> <span class="w"><span class="wi" style="--d:2">Authorship,</span></span> <span class="w"><span class="wi" style="--d:3">Authority,</span></span> <span class="w"><span class="wi" style="--d:4">and</span></span> <span class="w"><span class="wi" style="--d:5">Authenticity</span></span></h1>
     <p class="mono"><span class="status status--held">Held</span> 27–29 July 2026 / Singapore</p>
     <p class="head-lede">APARN joined NAFA’s practice-research exchange to ask who speaks through an artwork: questions of voice, authorship and authenticity in collaborative, embodied, traditional and AI-assisted practice.</p>
   </div>
 </header>
 <section class="sec-b facts-b">
-  <dl class="factsb"><div><dt class="mono">Label</dt><dd>ADPRex × APARN 2026</dd></div><div><dt class="mono">Host</dt><dd>Nanyang Academy of Fine Arts (NAFA), University of the Arts Singapore, with the Arts &amp; Design Practice Research Exchange (ADPRex)</dd></div><div><dt class="mono">Format</dt><dd>In person, in the NAFA Studio Theatre and Lee Foundation Theatre: papers, performances, creative interventions and video essays of up to 20 minutes. Free to attend.</dd></div><div><dt class="mono">Practice</dt><dd>Voice and authorship</dd></div></dl>
-  <div><h2 class="disp disp--s">Highlights</h2><ul class="bullets-b"><li>Keynotes: Celine Parreñas Shimizu (UCLA School of Theater, Film and Television) and farid rakun (ruangrupa)</li><li>Performance: Handle with Care by Ontroerend Goed, arranged with Esplanade – Theatres on the Bay</li><li>14 contributions already published in APARN’s JAR channel</li></ul></div>
+  <dl class="factsb" data-rise><div><dt class="mono">Label</dt><dd>ADPRex × APARN 2026</dd></div><div><dt class="mono">Host</dt><dd>Nanyang Academy of Fine Arts (NAFA), University of the Arts Singapore, with the Arts &amp; Design Practice Research Exchange (ADPRex)</dd></div><div><dt class="mono">Format</dt><dd>In person, in the NAFA Studio Theatre and Lee Foundation Theatre: papers, performances, creative interventions and video essays of up to 20 minutes. Free to attend.</dd></div><div><dt class="mono">Practice</dt><dd>Voice and authorship</dd></div></dl>
+  <div><h2 class="disp disp--s" data-rise>Highlights</h2><ul class="bullets-b" data-rise><li>Keynotes: Celine Parreñas Shimizu (UCLA School of Theater, Film and Television) and farid rakun (ruangrupa)</li><li>Performance: Handle with Care by Ontroerend Goed, arranged with Esplanade – Theatres on the Bay</li><li>14 contributions already published in APARN’s JAR channel</li></ul></div>
 </section>
-<section class="sec-b"><h2 class="disp disp--s">Event organisers</h2><ul class="orgs-b"><li><strong>ADPRex team, NAFA</strong><span class="mono">Host and organiser</span><a href="mailto:adprex@nafa.edu.sg">adprex@nafa.edu.sg</a></li></ul><p class="small">Listed for this edition. The network’s convenors are on the <a href="../../about/">About</a> page.</p></section>
+<section class="sec-b"><h2 class="disp disp--s" data-rise>Event organisers</h2><ul class="orgs-b"><li><strong>ADPRex team, NAFA</strong><span class="mono">Host and organiser</span><a href="mailto:adprex@nafa.edu.sg">adprex@nafa.edu.sg</a></li></ul><p class="small">Listed for this edition. The network’s convenors are on the <a href="../../about/">About</a> page.</p></section>
 
 
 <section class="sec-b"><details class="call-b"><summary>Read the original call (archived, now closed)</summary><blockquote><p>Encountering an artwork, the question of ‘who speaks’ and whose perspective and viewpoint we are receiving underscores our interaction with what we see, hear, and feel about a piece. … We invite presenters to consider how authorship is shaped and articulated in their work using new (and old) technologies.</p></blockquote></details></section>
-<section class="sec-b"><h2 class="disp disp--s">Find the work</h2><ul class="links-b"><li><a class="" href="https://www.nafa.edu.sg/adprex-2026" rel="noopener" target="_blank">ADPRex × APARN 2026 at NAFA<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li><li><a class="" href="https://www.jar-online.net/en/channels/asia-pacific-artistic-research-network" rel="noopener" target="_blank">Contributions in APARN’s JAR channel<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li><li><a class="" href="https://aparn.net/" rel="noopener" target="_blank">Original call on aparn.net (closed)<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li></ul></section>
+<section class="sec-b"><h2 class="disp disp--s" data-rise>Find the work</h2><ul class="links-b"><li><a class="" href="https://www.nafa.edu.sg/adprex-2026" rel="noopener" target="_blank">ADPRex × APARN 2026 at NAFA<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li><li><a class="" href="https://www.jar-online.net/en/channels/asia-pacific-artistic-research-network" rel="noopener" target="_blank">Contributions in APARN’s JAR channel<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li><li><a class="" href="https://aparn.net/" rel="noopener" target="_blank">Original call on aparn.net (closed)<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li></ul></section>
 <section class="sec-b"><p class="source">Sources: <a href="https://aparn.net/" rel="noopener" target="_blank">#APARN2026 call (homepage of aparn.net)</a>; <a href="https://www.nafa.edu.sg/adprex-2026" rel="noopener" target="_blank">ADPRex × APARN 2026 (NAFA)</a>; <a href="https://www.jar-online.net/en/channels/asia-pacific-artistic-research-network" rel="noopener" target="_blank">Asia Pacific Artistic Research Network channel (JAR)</a></p></section>
 <nav class="pager-b" aria-label="More gatherings">
   <a href="../../archive/sar2025/"><span class="mono">Earlier</span>APARN Gathering at SAR 2025</a>
@@ -81,8 +83,9 @@
       <li><a class="" href="https://sar2027.eu/sk" rel="noopener" target="_blank">SAR 2027<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li>
       <li><a class="" href="https://aparn.net" rel="noopener" target="_blank">Current aparn.net<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li></ul></div>
     <div><h2 class="foot-h mono">This prototype</h2><p class="small">A redesign proposal for discussion. Content checked 24 November 2026.</p><ul class="foot-list">
-      <li><a href="../../sources/">Sources, credits and open questions</a></li><li><a href="https://teohsingjian02.github.io/aparn-prototypeA/">See Concept A: Editorial Gallery</a></li><li><a href="https://teohsingjian02.github.io/aparn-prototypeC/">See Concept C: Clear Signal</a></li></ul></div>
+      <li><a href="../../compare/">Compare all three concepts</a></li><li><a href="../../sources/">Sources, credits and open questions</a></li><li><a href="https://teohsingjian02.github.io/aparn-prototypeA/">See Concept A: Editorial Gallery</a></li><li><a href="https://teohsingjian02.github.io/aparn-prototypeC/">See Concept C: Clear Signal</a></li></ul><button type="button" class="motion-sw" data-motion-toggle aria-pressed="false" hidden><span>Animations</span><span class="motion-sw-k" aria-hidden="true"></span></button></div>
   </div>
 </footer>
+<a class="totop" href="#main" data-totop><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M10 16V4M5 9l5-5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="vh">Back to top</span></a>
 </body>
 </html>

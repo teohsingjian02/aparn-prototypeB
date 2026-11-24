@@ -10,13 +10,14 @@
 <link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
 <link rel="preload" href="../../assets/fonts/archivo-normal-latin-3.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../../assets/b.css">
-<script>document.documentElement.classList.add("js")</script>
+<script>(function () { var r = document.documentElement, m = null; r.classList.add("js"); try { m = localStorage.getItem("aparn-motion"); } catch (e) {} var q = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches; if (m === "on" || (m !== "off" && !q)) r.classList.add("anim"); if (m === "off") r.classList.add("motion-off"); })();</script>
 <script defer src="../../assets/js/aparn.js"></script>
+<script defer src="../../assets/js/motion.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="proto">Prototype for discussion: a redesign proposal, not the official APARN website / <strong>Concept B: Living Network</strong> / <a href="../../compare/">Compare all three concepts</a></div>
-<header class="bar">
+<svg class="defs" width="0" height="0" aria-hidden="true" focusable="false"><defs><linearGradient id="b-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1300" y2="0"><stop offset="0" stop-color="#16E0A6"/><stop offset=".5" stop-color="#FFC23D"/><stop offset="1" stop-color="#FF4D3D"/></linearGradient></defs></svg>
+<header class="bar" data-top>
   <a class="bar-mark" href="../../"><span class="bar-aparn">APARN</span><span class="bar-full">Asia Pacific Artistic Research Network</span></a>
   <nav class="bar-quick" aria-label="Quick links">
     <a href="../../network/">Explore</a>
@@ -25,6 +26,7 @@
   </nav>
   <a class="btn btn--join bar-join" href="https://groups.google.com/g/ap-arn" rel="noopener" target="_blank" data-join>Join APARN<span class="vh"> (opens Google Groups in a new tab)</span></a>
   <button class="bar-index" type="button" data-nav-toggle aria-expanded="false" aria-controls="index-menu"><span class="bar-index-l">Index</span><span class="bar-index-i" aria-hidden="true"></span></button>
+  <div class="progress" aria-hidden="true"><span data-progress></span></div>
 </header>
 <div class="index-menu" id="index-menu" data-nav-overlay>
   <div class="index-inner">
@@ -46,27 +48,27 @@
 </div>
   <div class="ev-head-body">
     <p class="mono"><a href="../../archive/">Archive</a> / Gathering at SAR</p>
-    <h1 class="head-h">An online APARN gathering during SAR’s forum in Galway</h1>
+    <h1 class="head-h"><span class="w"><span class="wi" style="--d:0">An</span></span> <span class="w"><span class="wi" style="--d:1">online</span></span> <span class="w"><span class="wi" style="--d:2">APARN</span></span> <span class="w"><span class="wi" style="--d:3">gathering</span></span> <span class="w"><span class="wi" style="--d:4">during</span></span> <span class="w"><span class="wi" style="--d:5">SAR’s</span></span> <span class="w"><span class="wi" style="--d:6">forum</span></span> <span class="w"><span class="wi" style="--d:7">in</span></span> <span class="w"><span class="wi" style="--d:8">Galway</span></span></h1>
     <p class="mono"><span class="status status--announced">Online gathering</span> SAR in Galway, 23–26 June 2026 / Galway, Ireland</p>
     <p class="head-lede">Members were invited to gather online during SAR’s 2026 forum at the University of Galway, with times shared through the APARN Google Group.</p>
   </div>
 </header>
 <section class="sec-b facts-b">
-  <dl class="factsb"><div><dt class="mono">Label</dt><dd>APARN Gathering at SAR 2026</dd></div><div><dt class="mono">Host</dt><dd>Society for Artistic Research, University of Galway</dd></div><div><dt class="mono">Format</dt><dd>An online gathering open to all APARN members</dd></div><div><dt class="mono">Note</dt><dd>The APARN gathering was held online</dd></div></dl>
-  <div><h2 class="disp disp--s">Highlights</h2><ul class="bullets-b"><li>Open to every member of the APARN Google Group</li><li>SAR’s 2026 forum, University of Galway, 23–26 June 2026</li></ul></div>
+  <dl class="factsb" data-rise><div><dt class="mono">Label</dt><dd>APARN Gathering at SAR 2026</dd></div><div><dt class="mono">Host</dt><dd>Society for Artistic Research, University of Galway</dd></div><div><dt class="mono">Format</dt><dd>An online gathering open to all APARN members</dd></div><div><dt class="mono">Note</dt><dd>The APARN gathering was held online</dd></div></dl>
+  <div><h2 class="disp disp--s" data-rise>Highlights</h2><ul class="bullets-b" data-rise><li>Open to every member of the APARN Google Group</li><li>SAR’s 2026 forum, University of Galway, 23–26 June 2026</li></ul></div>
 </section>
 
 
 
 
-<section class="sec-b"><h2 class="disp disp--s">Find the work</h2><ul class="links-b"><li><a class="" href="https://societyforartisticresearch.org/sigs/asia-pacific-artistic-research-network" rel="noopener" target="_blank">SAR’s APARN page<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li></ul></section>
+<section class="sec-b"><h2 class="disp disp--s" data-rise>Find the work</h2><ul class="links-b"><li><a class="" href="https://societyforartisticresearch.org/sigs/asia-pacific-artistic-research-network" rel="noopener" target="_blank">SAR’s APARN page<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li></ul></section>
 <section class="sec-b"><p class="source">Sources: <a href="https://www.researchcatalogue.net/announcements/4152674" rel="noopener" target="_blank">APARN newsletter, January 2026 (SAR announcement service)</a>; <a href="https://societyforartisticresearch.org/sigs/asia-pacific-artistic-research-network" rel="noopener" target="_blank">Asia Pacific Artistic Research Network (SAR Special Interest Groups)</a></p></section>
 <nav class="pager-b" aria-label="More gatherings">
   <a href="../../archive/aparn2026/"><span class="mono">Earlier</span>ADPRex × APARN 2026</a>
   <a href="../../archive/aparn2027/"><span class="mono">Later</span>APARN2027</a>
 </nav>
 <section class="join-band" aria-labelledby="jb-20"><h2 id="jb-20" class="join-band-h">Be the first to hear</h2>
-  <div class="join-band-body"><p>Dates, calls and details are shared through the APARN Google Group.</p><a class="btn btn--join btn--xl" href="https://groups.google.com/g/ap-arn" rel="noopener" target="_blank" data-join>Join APARN<span class="vh"> (opens Google Groups in a new tab)</span></a><p class="mono small">Opens Google Groups. You join there.</p></div></section>
+  <div class="join-band-body" data-rise><p>Dates, calls and details are shared through the APARN Google Group.</p><a class="btn btn--join btn--xl" href="https://groups.google.com/g/ap-arn" rel="noopener" target="_blank" data-join>Join APARN<span class="vh"> (opens Google Groups in a new tab)</span></a><p class="mono small">Opens Google Groups. You join there.</p></div></section>
 </main>
 <footer class="foot">
   <div class="foot-band">
@@ -82,8 +84,9 @@
       <li><a class="" href="https://sar2027.eu/sk" rel="noopener" target="_blank">SAR 2027<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li>
       <li><a class="" href="https://aparn.net" rel="noopener" target="_blank">Current aparn.net<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li></ul></div>
     <div><h2 class="foot-h mono">This prototype</h2><p class="small">A redesign proposal for discussion. Content checked 24 November 2026.</p><ul class="foot-list">
-      <li><a href="../../sources/">Sources, credits and open questions</a></li><li><a href="https://teohsingjian02.github.io/aparn-prototypeA/">See Concept A: Editorial Gallery</a></li><li><a href="https://teohsingjian02.github.io/aparn-prototypeC/">See Concept C: Clear Signal</a></li></ul></div>
+      <li><a href="../../compare/">Compare all three concepts</a></li><li><a href="../../sources/">Sources, credits and open questions</a></li><li><a href="https://teohsingjian02.github.io/aparn-prototypeA/">See Concept A: Editorial Gallery</a></li><li><a href="https://teohsingjian02.github.io/aparn-prototypeC/">See Concept C: Clear Signal</a></li></ul><button type="button" class="motion-sw" data-motion-toggle aria-pressed="false" hidden><span>Animations</span><span class="motion-sw-k" aria-hidden="true"></span></button></div>
   </div>
 </footer>
+<a class="totop" href="#main" data-totop><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M10 16V4M5 9l5-5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="vh">Back to top</span></a>
 </body>
 </html>

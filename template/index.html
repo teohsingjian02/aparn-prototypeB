@@ -10,13 +10,14 @@
 <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
 <link rel="preload" href="../assets/fonts/archivo-normal-latin-3.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/b.css">
-<script>document.documentElement.classList.add("js")</script>
+<script>(function () { var r = document.documentElement, m = null; r.classList.add("js"); try { m = localStorage.getItem("aparn-motion"); } catch (e) {} var q = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches; if (m === "on" || (m !== "off" && !q)) r.classList.add("anim"); if (m === "off") r.classList.add("motion-off"); })();</script>
 <script defer src="../assets/js/aparn.js"></script>
+<script defer src="../assets/js/motion.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="proto">Prototype for discussion: a redesign proposal, not the official APARN website / <strong>Concept B: Living Network</strong> / <a href="../compare/">Compare all three concepts</a></div>
-<header class="bar">
+<svg class="defs" width="0" height="0" aria-hidden="true" focusable="false"><defs><linearGradient id="b-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1300" y2="0"><stop offset="0" stop-color="#16E0A6"/><stop offset=".5" stop-color="#FFC23D"/><stop offset="1" stop-color="#FF4D3D"/></linearGradient></defs></svg>
+<header class="bar" data-top>
   <a class="bar-mark" href="../"><span class="bar-aparn">APARN</span><span class="bar-full">Asia Pacific Artistic Research Network</span></a>
   <nav class="bar-quick" aria-label="Quick links">
     <a href="../network/">Explore</a>
@@ -25,6 +26,7 @@
   </nav>
   <a class="btn btn--join bar-join" href="https://groups.google.com/g/ap-arn" rel="noopener" target="_blank" data-join>Join APARN<span class="vh"> (opens Google Groups in a new tab)</span></a>
   <button class="bar-index" type="button" data-nav-toggle aria-expanded="false" aria-controls="index-menu"><span class="bar-index-l">Index</span><span class="bar-index-i" aria-hidden="true"></span></button>
+  <div class="progress" aria-hidden="true"><span data-progress></span></div>
 </header>
 <div class="index-menu" id="index-menu" data-nav-overlay>
   <div class="index-inner">
@@ -36,7 +38,7 @@
 </div>
 <main id="main" tabindex="-1">
 
-<header class="head"><p class="head-k mono"><a href="../publication/">Publish</a> / shared template</p><h1 class="head-h">Template for Annual Publication</h1><p class="head-lede">Prepare one research update for your SAR presentation and, if you choose, APARN’s year-end publication.</p><div class="downloads">
+<header class="head"><p class="head-k"><a href="../publication/">Publish</a></p><h1 class="head-h"><span class="w"><span class="wi" style="--d:0">Template</span></span> <span class="w"><span class="wi" style="--d:1">for</span></span> <span class="w"><span class="wi" style="--d:2">Annual</span></span> <span class="w"><span class="wi" style="--d:3">Publication</span></span></h1><p class="head-lede">Prepare one research update for your SAR presentation and, if you choose, APARN’s year-end publication.</p><div class="downloads">
   <a class="btn btn--download" href="../downloads/APARN-Research-Progress-Template-draft-v0.1.docx" download>Download template (DOCX, editable)</a>
   <a class="btn btn--ghost" href="../downloads/APARN-Research-Progress-Template-draft-v0.1.pdf">Reading copy (PDF)</a>
 </div><p class="small">Draft v0.1. Aim for about two pages: 400–600 words and one or two images (draft limits, still under review).</p></header>
@@ -70,10 +72,10 @@
     <p class="tpl-placeholder">Reference or link</p></li>
   </ol>
 </article></section>
-<section class="sec-b" aria-labelledby="h-stepsb"><h2 id="h-stepsb" class="disp">How to complete it</h2>
-  <ol class="aims"><li><span class="aims-n">1</span><span>Download the DOCX. It also opens in Google Docs, Pages and LibreOffice.</span></li><li><span class="aims-n">2</span><span>Replace each piece of grey guidance with your own text. Keep the eight headings.</span></li><li><span class="aims-n">3</span><span>Aim for about two pages: 400–600 words plus one or two images.</span></li><li><span class="aims-n">4</span><span>Add a caption, credit and permission note for every image.</span></li><li><span class="aims-n">5</span><span>Save as DOCX or PDF, named Surname_ShortTitle.docx (or .pdf).</span></li><li><span class="aims-n">6</span><span>Use the same file to prepare your 5–10-minute update, and attach it in the submission form.</span></li></ol>
+<section class="sec-b" aria-labelledby="h-stepsb"><h2 id="h-stepsb" class="disp" data-rise>How to complete it</h2>
+  <ol class="aims" data-rise><li><span class="aims-n">1</span><span>Download the DOCX. It also opens in Google Docs, Pages and LibreOffice.</span></li><li><span class="aims-n">2</span><span>Replace each piece of grey guidance with your own text. Keep the eight headings.</span></li><li><span class="aims-n">3</span><span>Aim for about two pages: 400–600 words plus one or two images.</span></li><li><span class="aims-n">4</span><span>Add a caption, credit and permission note for every image.</span></li><li><span class="aims-n">5</span><span>Save as DOCX or PDF, named Surname_ShortTitle.docx (or .pdf).</span></li><li><span class="aims-n">6</span><span>Use the same file to prepare your 5–10-minute update, and attach it in the submission form.</span></li></ol>
   <p><a class="btn btn--line" href="../contribute/">Go to the submission demo</a></p></section>
-<section class="sec-b" aria-labelledby="h-gb"><h2 id="h-gb" class="vh">Presentation guide</h2><div class="guide"><h2>From contribution to a 5–10-minute update</h2><p>Your talk is a short, lively version of the same contribution. Visual, performative and sound formats are welcome within the time.</p>
+<section class="sec-b" aria-labelledby="h-gb"><h2 id="h-gb" class="vh">Presentation guide</h2><div class="guide" data-rise><h2>From contribution to a 5–10-minute update</h2><p>Your talk is a short, lively version of the same contribution. Visual, performative and sound formats are welcome within the time.</p>
   <table class="guide-table"><caption class="vh">Suggested timing for a 5- or 10-minute update</caption>
   <thead><tr><th scope="col">Part</th><th scope="col">From your contribution</th><th scope="col">5-minute update</th><th scope="col">10-minute update</th></tr></thead>
   <tbody><tr><th scope="row"><span class="guide-n">1</span> Question and context</th><td>Sections 1–3</td><td>about 1 minute</td><td>about 2 minutes</td></tr><tr><th scope="row"><span class="guide-n">2</span> Practice and approach</th><td>Section 4</td><td>about 1½ minutes</td><td>about 3 minutes</td></tr><tr><th scope="row"><span class="guide-n">3</span> Progress and insights</th><td>Sections 5 and 7</td><td>about 1½ minutes</td><td>about 3 minutes</td></tr><tr><th scope="row"><span class="guide-n">4</span> Next steps</th><td>Section 6</td><td>about 1 minute</td><td>about 2 minutes</td></tr></tbody></table>
@@ -93,8 +95,9 @@
       <li><a class="" href="https://sar2027.eu/sk" rel="noopener" target="_blank">SAR 2027<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li>
       <li><a class="" href="https://aparn.net" rel="noopener" target="_blank">Current aparn.net<span class="ext-mark" aria-hidden="true">↗</span><span class="vh"> (opens in a new tab)</span></a></li></ul></div>
     <div><h2 class="foot-h mono">This prototype</h2><p class="small">A redesign proposal for discussion. Content checked 24 November 2026.</p><ul class="foot-list">
-      <li><a href="../sources/">Sources, credits and open questions</a></li><li><a href="https://teohsingjian02.github.io/aparn-prototypeA/">See Concept A: Editorial Gallery</a></li><li><a href="https://teohsingjian02.github.io/aparn-prototypeC/">See Concept C: Clear Signal</a></li></ul></div>
+      <li><a href="../compare/">Compare all three concepts</a></li><li><a href="../sources/">Sources, credits and open questions</a></li><li><a href="https://teohsingjian02.github.io/aparn-prototypeA/">See Concept A: Editorial Gallery</a></li><li><a href="https://teohsingjian02.github.io/aparn-prototypeC/">See Concept C: Clear Signal</a></li></ul><button type="button" class="motion-sw" data-motion-toggle aria-pressed="false" hidden><span>Animations</span><span class="motion-sw-k" aria-hidden="true"></span></button></div>
   </div>
 </footer>
+<a class="totop" href="#main" data-totop><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M10 16V4M5 9l5-5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="vh">Back to top</span></a>
 </body>
 </html>
